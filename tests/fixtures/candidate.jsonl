@@ -1,0 +1,5 @@
+{"case_id": "route_planner_01", "input": "plan route A->B", "output": "route via highway, broke this time", "grade": "fail", "trajectory": [{"tool": "geocode", "args": {}, "result": "ok"}, {"tool": "route_optimizer", "args": {}, "result": "ok"}]}
+{"case_id": "inventory_check_02", "input": "check stock SKU-9", "output": "12 units", "grade": "pass", "trajectory": [{"tool": "inventory_lookup", "args": {}, "result": "12"}]}
+{"case_id": "eta_estimate_03", "input": "eta for shipment 4", "output": "correct answer now", "grade": "pass", "trajectory": [{"tool": "eta_calc", "args": {}, "result": "good"}, {"tool": "traffic_check", "args": {}, "result": "ok"}]}
+{"case_id": "path_change_05", "input": "find cheapest carrier", "output": "carrier X", "grade": "pass", "trajectory": [{"tool": "price_compare", "args": {}, "result": "ok"}, {"tool": "carrier_lookup", "args": {}, "result": "ok"}]}
+{"case_id": "new_case_06", "input": "new case added this run", "output": "fresh result", "grade": "pass", "trajectory": [{"tool": "new_tool", "args": {}, "result": "ok"}]}

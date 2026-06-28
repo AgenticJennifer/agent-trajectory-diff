@@ -1,0 +1,18 @@
+[project]
+name = "agent-trajectory-diff"
+version = "0.1.0"
+description = "Diff two agent trace logs by case_id, tool-call sequence, and grade — catches path regressions that final-answer-only evals miss."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "agenticjennifer" }]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+trajdiff = "cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
